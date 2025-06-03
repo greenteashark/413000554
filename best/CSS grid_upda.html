@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<style>
+        body {
+            margin: 0;
+        }
+        .container {
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 60px 1fr 1fr 100px;
+            grid-gap: 10px;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .container div {
+            border-width: 1px;
+            border-style: solid;
+            padding: 15px;
+            border-radius: 15px; /* 圆角 */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 阴影 */
+        }
+        .header {
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+        .big-content {
+            grid-column-start: 1;
+            grid-column-end: span 2;
+            grid-row-start: 2;
+            grid-row-end: span 2;
+        }
+        .footer {
+            grid-column: 1 / span 3;
+        }
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .content img {
+            max-width: 100%;
+            border-radius: 15px; /* 图片圆角 */
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+<div class="header content" style="background-color: rgba(255, 99, 71, 0.8);">
+<p>grid作品(可隨網頁拉動變動)</p>
+</div>
+<div class="big-content content" style="background-color: rgba(135, 206, 235, 0.8);">
+<img alt="Big Content Image" src="940.png"/>
+<p>遊戲照</p>
+</div>
+<div class="small-content content" style="background-color: rgba(144, 238, 144, 0.8);">
+<img alt="Small Content Image 1" src="762.jpg"/>
+<p>貓咪</p>
+</div>
+<div class="small-content content" style="background-color: rgba(144, 238, 144, 0.8);">
+<img alt="Small Content Image 2" src="956.png"/>
+<p>喜歡的角色圖</p>
+</div>
+<div class="footer content" style="background-color: rgba(255, 228, 181, 0.8);">
+<p>
+你好！我的名字是李柏勳。我是一名熱愛學習和成長的學生。在這裡，你會找到關於我的課程和我的成長歷程的資訊。
+我的興趣
+閱讀輕小說
+到處玩和逛二次元相關展覽和品嘗美食
+科技和遊戲
+我的目標
+以優異成績畢業
+學習新的程式語言
+努力cos自己喜歡的角色</p>
+
+<!-- 固定在底部的 footer -->
+ <footer class="fixed-footer">
+ <p>
+ 你好！我的名字是李柏勳。我是一名熱愛學習和成長的學生。<br>
+ 我的興趣：閱讀輕小說、逛展覽、品嘗美食、科技與遊戲<br>
+ 我的目標：以優異成績畢業、學習新語言、努力 cosplay
+ </p>
+ <div>
+ <a href="index.html" class="button">返回首頁</a>
+ <a href="experience.html" class="button">查看我的經歷</a>
+ <a href="schedule.html" class="button">查看我的課表</a>
+</div>
+</footer>
+</body>
+</html>
+
+</div>
+</div>
+</section>
+</body>
+</html>
